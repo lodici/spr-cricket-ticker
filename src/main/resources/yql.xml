@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<query xmlns:yahoo="http://www.yahooapis.com/v1/base.rng" yahoo:count="5" yahoo:created="2016-03-01T19:54:51Z" yahoo:lang="en-US">
+    <diagnostics>
+        <cache execution-start-time="1" execution-stop-time="4" execution-time="3" method="GET" type="MEMCACHED">
+            <![CDATA[TABLE.queryyahooapiscomproductionbf1.cricket.upcoming_matches.f0492b5b88918c27cbe955e3db7f66bf]]>
+        </cache>
+        <url execution-start-time="5" execution-stop-time="7" execution-time="2">
+            <![CDATA[http://sherpa-bcp5903.dht.yahoo.com:4080/YDHTWebService/V1/get/yql.global/store%3A%2F%2FHpFd40jgIuzAf4VrtOOToe]]>
+        </url>
+        <publiclyCallable>true</publiclyCallable>
+        <url execution-start-time="11" execution-stop-time="20" execution-time="9">
+            <![CDATA[http://cricketwebservice/ws/cwsapi/matches.php?type=upcoming&offset=0&count=5]]>
+        </url>
+        <user-time>20</user-time>
+        <service-time>14</service-time>
+        <build-version>0.2.418</build-version>
+    </diagnostics>
+    <results>
+        <Match group="" matchid="193769" mtype="t20" series_id="12434" series_name="Asia Cup, 2016" stage="heat" status="pre">
+            <MatchNo>Match 8</MatchNo>
+            <Venue venueid="145">Shere Bangla National Stadium, Mirpur</Venue>
+            <StartDate>2016-03-02T19:00:00+05:30</StartDate>
+            <EndDate>2016-03-02T23:00:00+05:30</EndDate>
+            <MatchTimeSpan>Day-Night</MatchTimeSpan>
+            <Team Team="Bangladesh" role="" teamid="2"/>
+            <Team Team="Pakistan" role="" teamid="6"/>
+            <date_match_start>20160302133000</date_match_start>
+            <date_match_end>20160302173000</date_match_end>
+        </Match>
+        <Match group="" matchid="193770" mtype="t20" series_id="12434" series_name="Asia Cup, 2016" stage="heat" status="pre">
+            <MatchNo>Match 9</MatchNo>
+            <Venue venueid="145">Shere Bangla National Stadium, Mirpur</Venue>
+            <StartDate>2016-03-03T19:00:00+05:30</StartDate>
+            <EndDate>2016-03-03T23:00:00+05:30</EndDate>
+            <MatchTimeSpan>Day-Night</MatchTimeSpan>
+            <Team Team="India" role="" teamid="4"/>
+            <Team Team="United Arab Emirates" role="" teamid="21"/>
+            <date_match_start>20160303133000</date_match_start>
+            <date_match_end>20160303173000</date_match_end>
+        </Match>
+        <Match group="" matchid="193771" mtype="t20" series_id="12434" series_name="Asia Cup, 2016" stage="heat" status="pre">
+            <MatchNo>Match 10</MatchNo>
+            <Venue venueid="145">Shere Bangla National Stadium, Mirpur</Venue>
+            <StartDate>2016-03-04T19:00:00+05:30</StartDate>
+            <EndDate>2016-03-04T23:00:00+05:30</EndDate>
+            <MatchTimeSpan>Day-Night</MatchTimeSpan>
+            <Team Team="Pakistan" role="" teamid="6"/>
+            <Team Team="Sri Lanka" role="" teamid="8"/>
+            <date_match_start>20160304133000</date_match_start>
+            <date_match_end>20160304173000</date_match_end>
+        </Match>
+        <Match group="" matchid="191912" mtype="t20" series_id="12277" series_name="Australia in South Africa T20 Series, 3 T20 Cricket Series, 2016" stage="heat" status="pre">
+            <MatchNo>1st T20I</MatchNo>
+            <Venue venueid="84">Kingsmead, Durban</Venue>
+            <StartDate>2016-03-04T21:30:00+05:30</StartDate>
+            <EndDate>2016-03-05T01:30:00+05:30</EndDate>
+            <MatchTimeSpan>Day-Night</MatchTimeSpan>
+            <Team Team="South Africa" role="" teamid="7"/>
+            <Team Team="Australia" role="" teamid="1"/>
+            <date_match_start>20160304160000</date_match_start>
+            <date_match_end>20160304200000</date_match_end>
+        </Match>
+        <Match group="" matchid="191913" mtype="t20" series_id="12277" series_name="Australia in South Africa T20 Series, 3 T20 Cricket Series, 2016" stage="heat" status="pre">
+            <MatchNo>2nd T20I</MatchNo>
+            <Venue venueid="111">The Wanderers Stadium, Johannesburg</Venue>
+            <StartDate>2016-03-06T18:00:00+05:30</StartDate>
+            <EndDate>2016-03-06T22:00:00+05:30</EndDate>
+            <MatchTimeSpan>Day</MatchTimeSpan>
+            <Team Team="South Africa" role="" teamid="7"/>
+            <Team Team="Australia" role="" teamid="1"/>
+            <date_match_start>20160306123000</date_match_start>
+            <date_match_end>20160306163000</date_match_end>
+        </Match>
+    </results>
+</query>
+<!-- total: 20 -->
+<!-- main-6b340a0e-df48-11e5-bf99-d89d676f9644 -->
