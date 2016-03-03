@@ -33,7 +33,7 @@ import org.joda.time.format.PeriodFormatterBuilder;
 
 public class CricketTickerSelector implements ICricketTickerListener {
 
-	private static final Boolean useSampleLiveFeed = false;
+	private static final Boolean useSampleLiveFeed = Boolean.getBoolean("useSampleFeed");
 
 	private static Display display;
 	private static Shell shell;
@@ -54,7 +54,6 @@ public class CricketTickerSelector implements ICricketTickerListener {
 	}
 
 	private static void mainEventLoop() {
-        System.out.println(Boolean.getBoolean("useSampleFeed"));
 		while (!shell.isDisposed()) {
 			if (!display.readAndDispatch()) {
 				display.sleep();
