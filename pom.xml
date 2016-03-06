@@ -48,7 +48,7 @@
                 <goals>
                   <goal>single</goal>
                 </goals>
-                <configuration>
+                <configuration>                
                   <descriptorRefs>
                     <!-- Including dependencies in a jar with Maven -->
                     <!-- - http://stackoverflow.com/questions/1729054/including-dependencies-in-a-jar-with-maven -->
@@ -58,6 +58,11 @@
                   <!-- http://stackoverflow.com/questions/1334999/is-it-possible-to-rename-a-maven-jar-with-dependencies/1335121#1335121 -->
                   <finalName>cricket-ticker-win32</finalName>
                   <appendAssemblyId>false</appendAssemblyId>
+                  <archive>
+                    <manifest>
+                      <mainClass>spr.CricketTicker.CricketTickerSelector</mainClass>
+                    </manifest>
+                  </archive>                  
                 </configuration>
               </execution>
             </executions>
