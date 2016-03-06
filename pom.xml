@@ -26,6 +26,9 @@
 
     <profile>
       <id>windows32</id>
+      <activation>
+        <activeByDefault>true</activeByDefault>
+      </activation>        
       <dependencies>
         <dependency>
           <!-- See http://stackoverflow.com/questions/5096299/maven-project-swt-3-5-dependency-any-official-public-repo -->
