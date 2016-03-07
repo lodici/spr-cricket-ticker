@@ -1,3 +1,3 @@
 test:
   post:
-    - mv /home/ubuntu/spr-cricket-ticker/target/cricket-ticker-win32.jar $CIRCLE_ARTIFACTS
+    - mv /home/ubuntu/spr-cricket-ticker/build/libs/spr-cricket-ticker.jar $CIRCLE_ARTIFACTS

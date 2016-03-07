@@ -2,3 +2,6 @@ target/*
 nbactions-windows32.xml
 nb-configuration.xml
 nbactions-windows32-sample-feed.xml
+.gradle/
+.nb-gradle/
+build/
