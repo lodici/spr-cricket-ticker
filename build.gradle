@@ -1,49 +1,21 @@
-apply plugin: 'java'
+// adds tasks for running and bundling a Java project as a command-line application.
+// (see https://docs.gradle.org/current/userguide/application_plugin.html)
+apply plugin: 'application'
 
 sourceCompatibility = '1.6'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-// NetBeans will automatically add "run" and "debug" tasks relying on the
-// "mainClass" property. You may however define the property prior executing
-// tasks by passing a "-PmainClass=<QUALIFIED_CLASS_NAME>" argument.
-//
-// Note however, that you may define your own "run" and "debug" task if you
-// prefer. In this case NetBeans will not add these tasks but you may rely on
-// your own implementation.
-if (!hasProperty('mainClass')) {
-    ext.mainClass = 'spr.CricketTicker.CricketTickerSelector'
-}
-
-// Include dependent libraries in archive.
-jar {
-  manifest { 
-    attributes "Implementation-Title": "SPR Cricket Ticker",
-               "Main-Class": "$mainClass"
-  }  
-  from {
-    configurations.compile.collect { it.isDirectory() ? it : zipTree(it) }
-  }
-}
+mainClassName = 'spr.CricketTicker.CricketTickerSelector'
 
 repositories {
     mavenLocal()
     mavenCentral()
-    // You may define additional repositories, or even remove "mavenCentral()".
-    // Read more about repositories here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:repositories
 }
 
 dependencies {
-    // !!! You will need to reload the project in Netbeans for updates to appear.
-    // !!! Right-click project node -> Reload project.
-    //
-    // You can read more about how to add dependency here:
-    //   http://www.gradle.org/docs/current/userguide/dependency_management.html#sec:how_to_declare_your_dependencies
-//    testCompile group: 'junit', name: 'junit', version: '4.10'
     compile group: 'org.eclipse.swt', name: 'org.eclipse.swt.win32.win32.x86', version: '4.3'
     compile 'org.apache.httpcomponents:httpclient:4.3',
             'org.apache.httpcomponents:fluent-hc:4.3'
     compile 'org.jdom:jdom2:2.0.5'
     compile 'joda-time:joda-time:2.3'
-    
 }
