@@ -1,0 +1,3 @@
+include 'spr-cricket-ticker-nix64'
+include 'spr-cricket-ticker-win32'
+include 'spr-cricket-ticker-nix32'

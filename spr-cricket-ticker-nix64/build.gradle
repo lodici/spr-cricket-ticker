@@ -5,15 +5,15 @@ apply plugin: 'application'
 sourceCompatibility = '1.6'
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
 
-mainClassName = 'spr.CricketTicker.CricketTickerSelector'
-
 repositories {
     mavenLocal()
     mavenCentral()
 }
 
+mainClassName = 'spr.CricketTicker.CricketTickerSelector'
+
 dependencies {
-    compile group: 'org.eclipse.swt', name: 'org.eclipse.swt.win32.win32.x86', version: '4.3'
+    compile group: 'org.eclipse.swt', name: 'org.eclipse.swt.gtk.linux.x86_64', version: '4.3'
     compile 'org.apache.httpcomponents:httpclient:4.3',
             'org.apache.httpcomponents:fluent-hc:4.3'
     compile 'org.jdom:jdom2:2.0.5'
