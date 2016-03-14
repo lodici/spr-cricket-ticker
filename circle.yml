@@ -2,3 +2,7 @@ dependencies:
   override:
     - gradle distZip
     
+test:
+  post:
+    - mv /home/ubuntu/spr-cricket-ticker/spr-cricket-ticker-win32/build/distributions/spr-cricket-ticker-win32.zip $CIRCLE_ARTIFACTS
+    
