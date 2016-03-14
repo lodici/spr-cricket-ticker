@@ -5,4 +5,5 @@ dependencies:
 test:
   post:
     - mv /home/ubuntu/spr-cricket-ticker/spr-cricket-ticker-win32/build/distributions/spr-cricket-ticker-win32.zip $CIRCLE_ARTIFACTS
-    
+    - mv /home/ubuntu/spr-cricket-ticker/spr-cricket-ticker-nix32/build/distributions/spr-cricket-ticker-nix32.zip $CIRCLE_ARTIFACTS
+    - mv /home/ubuntu/spr-cricket-ticker/spr-cricket-ticker-nix64/build/distributions/spr-cricket-ticker-nix64.zip $CIRCLE_ARTIFACTS
